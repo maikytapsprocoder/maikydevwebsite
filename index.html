@@ -1,6 +1,10 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="MaikyDev (Mateo De León): sistemas de gestión a medida. Mercedes, Soriano, Uruguay.">
 <title>MaikyDev</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: columna única centrada de lectura, hero partido (texto + agenda de ejemplo), secciones en bandas con grilla de proyectos */
@@ -98,7 +102,10 @@ footer{padding-block:32px;color:var(--muted);font-size:.88rem;display:flex;justi
   .feat{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:no-preference){.btn{transition:filter .15s}}
+html{background:var(--bg)}
 </style>
+</head>
+<body>
 
 <div class="wrap">
 <nav>
@@ -199,13 +206,13 @@ var PROYECTOS = [
    texto:'Agenda, caja, clientes y stock para peluquerías, con sincronización entre dispositivos.',
    puntos:['Web app instalable en el celular','Cuenta propia por salón','Respaldos y soporte local'],
    video:'', demo:''},
-  {nombre:'AgroCut', estado:'Prototipo', dev:true,
-   texto:'Robot cortacésped controlado desde el celular por Bluetooth, con corte de seguridad.',
-   puntos:['Arduino Mega y 4 motores con reductor','Se detiene al levantarlo o perder señal','Chasis impreso en 3D'],
+  {nombre:'MecaHub', estado:'En venta', dev:false,
+   texto:'Sistema de gestión para talleres mecánicos, listo para usar y con demo disponible.',
+   puntos:['Pensado para el día a día del taller','Funciona desde el celular o la computadora','Demo para probar antes de decidir'],
    video:'', demo:''},
-  {nombre:'Joystick Bluetooth', estado:'En desarrollo', dev:true,
-   texto:'App con mando tipo joystick para manejar un robot por Bluetooth desde el teléfono.',
-   puntos:['Control por Bluetooth','Pensada para el robot AgroCut'],
+  {nombre:'CoachManager', estado:'En desarrollo', dev:true,
+   texto:'Sistema de gestión para gimnasios, en construcción.',
+   puntos:['Pensado para la administración del gimnasio','Próximamente disponible'],
    video:'', demo:''}
 ];
 var play='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
@@ -232,4 +239,5 @@ document.querySelectorAll('[data-copy]').forEach(function(b){
 });
 </script>
 
-</body></html>
+</body>
+</html>
